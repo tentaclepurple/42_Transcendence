@@ -1,6 +1,3 @@
-Claro, aquí tienes una guía general para almacenar datos de tipo clave-valor en la 
-blockchain de Ethereum utilizando un contrato inteligente. 
-Este ejemplo se basa en un contrato simple que almacena la puntuación asociada a un usuario:
 
 Configuración del Entorno:
 
@@ -48,14 +45,3 @@ al desarrollar contratos inteligentes para la cadena de bloques de Ethereum.
 
 
 
-Hola Leire!
-
-Soy Iban Montero, estudiante de 42. Antes que nada muchas gracias por vuestra visita a Urduliz.
-
-Actualmente estoy en búsqueda de empleo por lo que te hago llegar mi CV además de un enlace a mi LinkedIn (donde te he contactado) y aprovecho para contarte un poco sobre mí.
-
-Como quizá ya sepas en 42 nos formamos principalmente en el "Common core" (la parte común para todos nosotros antes de las especializaciones) en programación en C y C++, redes y sistemas. En mi caso estoy a punto de terminar el "Common Core" en un tiempo record en el campus y seré la primera persona que ha terminado todo el recorrido con 
-
---
-Saludos.
-Iban Montero
