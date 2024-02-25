@@ -4,6 +4,11 @@ Instalar Node.js y npm:
     sudo apt update
     sudo apt install nodejs
     sudo apt install npm
+
+Instalar compilador Solidity (para ganache funciona con 0.8.19)
+
+    npm install -g solc@0.8.19
+
     
 Instalar Ganache:
 
