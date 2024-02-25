@@ -1,26 +1,22 @@
-Para instalar Ganache en tu subsistema Linux, puedes seguir los pasos que se indican a continuación. Asegúrate de tener Ubuntu o cualquier otra distribución de Linux compatible con el subsistema de Windows (WSL). También, ten en cuenta que necesitarás Node.js y npm instalados en tu subsistema antes de proceder.
 
 Instalar Node.js y npm:
 
-Abre una terminal en tu subsistema Linux y ejecuta los siguientes comandos para instalar Node.js y npm:
-
-bash
-#   sudo apt update
-  sudo apt install nodejs
-  sudo apt install npm
+    sudo apt update
+    sudo apt install nodejs
+    sudo apt install npm
+    
 Instalar Ganache:
 
 Una vez que Node.js y npm estén instalados, puedes instalar Ganache globalmente utilizando npm. Ejecuta el siguiente comando en la terminal:
 
-bash
-Copy code
-sudo npm install -g ganache-cli
+###  bash 
+    sudo npm install -g ganache-cli
 Ejecutar Ganache:
 
 Ahora que Ganache está instalado, puedes ejecutarlo en tu subsistema Linux. Abre una terminal y ejecuta el siguiente comando:
 
-bash
-ganache-cli
+    ganache-cli
+
 Esto iniciará Ganache y generará un conjunto de cuentas de Ethereum con fondos ficticios que puedes utilizar para desarrollo y pruebas.
 
 Usar Ganache con tu entorno de desarrollo:
