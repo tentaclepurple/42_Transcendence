@@ -5,10 +5,9 @@ Instalar Node.js y npm:
 Abre una terminal en tu subsistema Linux y ejecuta los siguientes comandos para instalar Node.js y npm:
 
 bash
-Copy code
-sudo apt update
-sudo apt install nodejs
-sudo apt install npm
+  sudo apt update
+  sudo apt install nodejs
+  sudo apt install npm
 Instalar Ganache:
 
 Una vez que Node.js y npm estén instalados, puedes instalar Ganache globalmente utilizando npm. Ejecuta el siguiente comando en la terminal:
