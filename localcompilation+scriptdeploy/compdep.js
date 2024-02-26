@@ -1,5 +1,5 @@
 const {Web3} = require('web3');
-const {fs} = require('fs');
+const fs = require('fs');
 
 // Configurar la conexión con Ganache
 const web3 = new Web3('http://localhost:8545');
