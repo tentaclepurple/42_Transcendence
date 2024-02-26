@@ -18,17 +18,26 @@ async function main() {
         // Obtener una lista de cuentas de Ganache
         const accounts = await web3.eth.getAccounts();
 
+        // Obtener el valor pasado como argumento para setData
+        const value = process.argv[2]; // El primer argumento después del nombre del script
+
+        // Verificar si el valor es un número válido
+        if (!value || isNaN(value)) {
+            console.error('Error: El valor proporcionado no es válido.');
+            return;
+        }
+
         // Llamar a la función getData del contrato para obtener el valor actual
         const data = await contract.methods.getData().call({ from: accounts[0] });
         console.log('El valor actual del contrato es:', data);
         
         // Llamar a la función setData del contrato para establecer un nuevo valor
-        await contract.methods.setData(199).send({ 
+        await contract.methods.setData(value).send({ 
             from: accounts[0],
             gas: 2000000, // Limite de gas para la transacción
             gasPrice: '30000000000' // Precio del gas
-        }); // Cambia el valor 99 por el que desees establecer
-        console.log('Se ha establecido un nuevo valor en el contrato.');
+        });
+        console.log('Se ha establecido un nuevo valor en el contrato:', value);
         
         // Llamar a la función getData del contrato nuevamente para obtener el valor cambiado
         const newData = await contract.methods.getData().call({ from: accounts[0] });
