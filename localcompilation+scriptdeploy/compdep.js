@@ -2,7 +2,7 @@ const {Web3} = require('web3');
 const fs = require('fs');
 
 // Configurar la conexión con Ganache
-const web3 = new Web3('http://localhost:8545');
+const web3 = new Web3('http://127.0.0.1:8545');
 
 // Leer el bytecode y el ABI del contrato compilado
 const bytecode = fs.readFileSync('./output/SimpleStorage_sol_SimpleStorage.bin', 'utf8');
