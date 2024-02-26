@@ -20,7 +20,7 @@ web3.eth.getAccounts()
         return contract.methods.setData(42).send({ 
             from: accounts[0],
             gas: 2000000,
-            gasPrice: '30000000000',
+            gasPrice: '30000000000'
         }); // Cambia el valor 42 por el que desees establecer
     })
     .then(() => {
