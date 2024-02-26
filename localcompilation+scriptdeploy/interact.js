@@ -7,8 +7,8 @@ const web3 = new Web3('http://127.0.0.1:8545'); // Cambia la URL por la de tu no
 // Leer el ABI del contrato
 const abi = JSON.parse(fs.readFileSync('output/SimpleStorage_sol_SimpleStorage.abi', 'utf8'));
 
-// Dirección del contrato desplegado
-const contractAddress = '0x4eEA49EA23Af169AB1B1743247D67338b9FCD772'; // Reemplaza con la dirección de tu contrato
+// Leer la dirección del contrato desde el archivo .addr
+const contractAddress = fs.readFileSync('.addr', 'utf8').trim(); // Se utiliza trim() para eliminar espacios en blanco alrededor
 
 // Crear una instancia del contrato
 const contract = new web3.eth.Contract(abi, contractAddress);
