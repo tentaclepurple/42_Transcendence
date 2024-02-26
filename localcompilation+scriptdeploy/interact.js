@@ -33,7 +33,7 @@ web3.eth.getAccounts()
         console.log('Se ha establecido un nuevo valor en el contrato.');
         
         // Llamar a la función getData del contrato nuevamente para obtener el valor cambiado
-        return contract.methods.getData().call();
+        return contract.methods.getData().call({ from: accounts[0] }); // Debería añadirse 'accounts[0]' aquí también
     })
     .then((newData) => {
         console.log('El valor actualizado del contrato es:', newData);
