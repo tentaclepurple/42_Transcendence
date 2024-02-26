@@ -7,7 +7,7 @@ const solc = require('solc');
 const contractCode = fs.readFileSync('SimpleStorage.sol', 'utf8');
 
 // Compilar el contrato
-const compiledContract = solc.compile(contractCode);
+const compiledContract = solcjs.compile(contractCode);
 
 // Obtener el bytecode y el ABI del contrato compilado
 const bytecode = compiledContract.contracts[':SimpleStorage'].bytecode;
