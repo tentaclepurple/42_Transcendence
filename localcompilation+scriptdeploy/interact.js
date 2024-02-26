@@ -17,7 +17,11 @@ const contract = new web3.eth.Contract(abi, contractAddress);
 web3.eth.getAccounts()
     .then(accounts => {
         // Realizar una transacción para llamar a la función setData del contrato
-        return contract.methods.setData(42).send({ from: accounts[0] }); // Cambia el valor 42 por el que desees establecer
+        return contract.methods.setData(42).send({ 
+            from: accounts[0],
+            gas: 2000000,
+            gasPrice: '30000000000',
+        }); // Cambia el valor 42 por el que desees establecer
     })
     .then(() => {
         // Llamar a la función getData del contrato para obtener el valor establecido
