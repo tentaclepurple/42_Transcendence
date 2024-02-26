@@ -5,8 +5,8 @@ const fs = require('fs');
 const web3 = new Web3('http://localhost:8545');
 
 // Leer el bytecode y el ABI del contrato compilado
-const bytecode = fs.readFileSync('SimpleStorage_sol_SimpleStorage.bin', 'utf8');
-const abi = JSON.parse(fs.readFileSync('SimpleStorage_sol_SimpleStorage.abi', 'utf8'));
+const bytecode = fs.readFileSync('./output/SimpleStorage_sol_SimpleStorage.bin', 'utf8');
+const abi = JSON.parse(fs.readFileSync('./output/SimpleStorage_sol_SimpleStorage.abi', 'utf8'));
 
 // Crear una instancia del contrato
 const contract = new web3.eth.Contract(abi);
