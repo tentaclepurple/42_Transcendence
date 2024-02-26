@@ -16,19 +16,27 @@ const contract = new web3.eth.Contract(abi, contractAddress);
 // Obtener una lista de cuentas de Ganache
 web3.eth.getAccounts()
     .then(accounts => {
-        // Realizar una transacción para llamar a la función setData del contrato
-        return contract.methods.setData(42).send({ 
-            from: accounts[0],
-            gas: 2000000,
-            gasPrice: '30000000000'
-        }); // Cambia el valor 42 por el que desees establecer
-    })
-    .then(() => {
-        // Llamar a la función getData del contrato para obtener el valor establecido
-        return contract.methods.getData().call();
+        // Llamar a la función getData del contrato para obtener el valor actual
+        return contract.methods.getData().call({ from: accounts[0] });
     })
     .then((data) => {
         console.log('El valor actual del contrato es:', data);
+        
+        // Llamar a la función setData del contrato para establecer un nuevo valor
+        return contract.methods.setData(99).send({ 
+            from: accounts[0],
+            gas: 2000000, // Limite de gas para la transacción
+            gasPrice: '30000000000' // Precio del gas
+        }); // Cambia el valor 99 por el que desees establecer
+    })
+    .then(() => {
+        console.log('Se ha establecido un nuevo valor en el contrato.');
+        
+        // Llamar a la función getData del contrato nuevamente para obtener el valor cambiado
+        return contract.methods.getData().call();
+    })
+    .then((newData) => {
+        console.log('El valor actualizado del contrato es:', newData);
     })
     .catch((error) => {
         console.error('Error al interactuar con el contrato:', error);
