@@ -1,3 +1,5 @@
+#this script works with ganache-cli and contract compiled and deployed in remix
+
 from web3 import Web3
 from eth_account import Account
 #from web3.middleware import geth_poa_middleware
