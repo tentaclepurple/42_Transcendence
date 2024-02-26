@@ -24,6 +24,7 @@ web3.eth.getAccounts()
         });
     })
     .then((newContractInstance) => {
+        fs.writeFileSync('.addr', newContractInstance.options.address);
         console.log('Contrato desplegado en la dirección:', newContractInstance.options.address);
     })
     .catch((error) => {
