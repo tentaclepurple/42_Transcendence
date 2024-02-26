@@ -1,7 +1,7 @@
 const fs = require('fs');
 const ganache = require('ganache-cli');
 const Web3 = require('web3');
-const solc = require('solcjs');
+const solc = require('solc');
 
 // Leer el código fuente del contrato
 const contractCode = fs.readFileSync('SimpleStorage.sol', 'utf8');
