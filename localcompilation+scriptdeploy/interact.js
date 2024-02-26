@@ -23,7 +23,7 @@ async function main() {
         console.log('El valor actual del contrato es:', data);
         
         // Llamar a la función setData del contrato para establecer un nuevo valor
-        await contract.methods.setData(99).send({ 
+        await contract.methods.setData(199).send({ 
             from: accounts[0],
             gas: 2000000, // Limite de gas para la transacción
             gasPrice: '30000000000' // Precio del gas
