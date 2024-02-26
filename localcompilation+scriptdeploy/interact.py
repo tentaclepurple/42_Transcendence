@@ -8,7 +8,7 @@ from eth_account import Account
 web3 = Web3(Web3.HTTPProvider('http://127.0.0.1:8545')) #host y puerto que pone en ganache-cli
 
 # Dirección del contrato desplegado en Remix
-contract_address = '0x34E047d0FCD820EBEe0b03827caE808B9aAf4c83'  # Reemplaza con la dirección de tu contrato
+contract_address = '0x4eEA49EA23Af169AB1B1743247D67338b9FCD772'  # Reemplaza con la dirección de tu contrato
 
 # ABI del contrato
 contract_abi = [
@@ -62,7 +62,7 @@ print(f'Valor actual en el contrato: {current_value}')
 
 # Actualizar el valor almacenado en el contrato (necesitas la clave privada para firmar la transacción)
 #sacada de ganache-cli
-private_key = '0x776a1d5ae9683851d1b325feb95aa33b20a624dc5282a5f1d938607cd6488424'  
+private_key = '0x7dfac6f0c781cb70e419e1a024fedc02ab62c185a47ac6d6e6db9c8a71a6882b'  
 account = Account.from_key(private_key)
 
 # Construir la transacción
