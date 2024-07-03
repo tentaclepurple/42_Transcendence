@@ -1,0 +1,84 @@
+services:
+
+  nginx:
+    container_name: nginx-trascendence
+    image: nginx-trascendence
+    build: ./nginx
+    volumes:
+      - ./backend/media:/media
+    ports:
+     - 4430:443
+     - 8081:8081
+    depends_on:
+      - frontend
+      - backend
+    restart: always
+
+  backend:
+    container_name: backend-trascendence
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
+    volumes:
+      - .:/app
+    depends_on:
+      - postgres
+      - redis
+    env_file:
+      - .env
+    restart: always
+#    entrypoint: python3
+#    stdin_open: true
+#    tty: true
+
+  postgres:
+    container_name: postgres-trascendence
+    image: postgres
+    expose:
+      - 5432
+    volumes:
+      - postgre_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: ${DJANGO_PSQL_PASSWORD}
+    restart: always
+
+  redis:
+    container_name: redis-trascendence
+    image: redis
+    restart: always
+
+  frontend:
+#    image: frontend-trascendence
+    container_name: frontend-trascendence
+    build: 
+      context: ./frontend
+      args:
+        - USER=$USER
+    environment:
+      - VITE_APP_FRONTEND_URL
+      - VITE_APP_BACKEND_URL
+      - VITE_WSS_APP_BACKEND_URL
+      - VITE_CHAT_APP_BACKEND_URL
+    ports:
+      - 8080
+    volumes:
+      - ./frontend:/app
+    depends_on:
+      - backend
+    entrypoint: /app/docker-entrypoint.sh
+    restart: always
+
+  ganache:
+    container_name: ganache-trascendence
+    build:
+      context: .
+      dockerfile: ganache/Dockerfile
+    restart: always
+    depends_on:
+      - backend
+
+volumes:
+    postgre_data:
+
