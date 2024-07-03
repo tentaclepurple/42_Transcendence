@@ -14,10 +14,6 @@
             "password1": "popopopo0987",
             "password2": "popopopo0987"
         }
-	(
-		Para subir image: ?
-	 	curl -X post <url> -F avatar=@<path>
-	)
     
     Return:
         {
@@ -82,12 +78,10 @@ Deletes token
 ---
 ### POST localhost:8000/api/token/refresh/
 
-  Authorization required NO
+  Authorization required YES
 
-    Body:
-      {
-          "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE3NTg0OTQyLCJpYXQiOjE3MTc1ODQzMTAsImp0aSI6IjQyYzM3YmVjZTA2OTRjMTk4YzdmNzk5N2VjOGQzZjk4IiwidXNlcl9pZCI6N30.9GaPZ9bfO7e2cKeu8gwCi9SNjJqK3pSNuJ03JTqrUvc"
-      }
+    Headers:
+         Bearer: Token <refresh token>
 
     Return:
       {
@@ -126,15 +120,10 @@ Deletes token
          Authorization: Token 7faff8fe07ef93d56b99a6c7f9e94bfc07d2d3eb
 
     Body:
-      	{
+      {
           "username": "potxoloTheThird",
           "avatar": "/media/avatars/fary.png"
-      	}
-		(
-		Para subir image: ?
-	 	curl -X post <url> -F avatar=@<path>
-		)
-
+      }
 
     Return:
       {
@@ -146,26 +135,6 @@ Deletes token
             ]
       }
 ---
-
-### GET localhost:8000/users/profile/
-
-  Authorization required YES
-
-    Headers:
-         Authorization: Token 7faff8fe07ef93d56b99a6c7f9e94bfc07d2d3eb
-
-    Return:
-      [
-            {
-				"id": 2,
-				"username": "nagore",
-				"is_connected": true,
-				"is_42": false,
-				"avatar": "/media/avatars/default.jpg",
-				"friends": []
-			}
-	  ]
-
 ### GET localhost:8000/users/user_list/
 
   Authorization required YES
@@ -178,7 +147,7 @@ Deletes token
             {
                 "username": "jimenetz",
                 "is_connected": false,
-                "avatar": "/media/avatars/default.jpg",
+                "avatar": "/media/avatars/default.png",
                 "friends": [
                     "carmentxu",
                     "potxoloTheThird"
@@ -187,7 +156,7 @@ Deletes token
             {
                 "username": "manoli",
                 "is_connected": false,
-                "avatar": "/media/avatars/default.jpg",
+                "avatar": "/media/avatars/default.png",
                 "friends": []
             },
             {
@@ -238,50 +207,6 @@ Deletes token
           "message": "manoli added as friend."
       }
   ---
-
-
-### POST localhost:8000/users/block_user/
-
-  Authorization required YES
-
-    Headers:
-         Authorization: Token 7faff8fe07ef93d56b99a6c7f9e94bfc07d2d3eb
-
-    Body:
-      {
-          "block_username": "manoli"
-      }
-
-    Return:
-      {
-          "success": true,
-          "message": "w has been blocked."
-      }
-  ---
-
-
-### POST localhost:8000/users/unblock_user/
-
-  Authorization required YES
-
-    Headers:
-         Authorization: Token 7faff8fe07ef93d56b99a6c7f9e94bfc07d2d3eb
-
-    Body:
-      {
-          "block_username": "manoli"
-      }
-
-    Return:
-      {
-          "success": true,
-          "message": "w has been blocked."
-      }
-  ---
-
-
-
-
 ### GET localhost:8000/users/friend_list/
 
   Authorization required YES
@@ -295,7 +220,7 @@ Deletes token
           {
               "username": "carmentxu",
               "is_connected": true,
-              "avatar": "/media/avatars/default.jpg",
+              "avatar": "/media/avatars/default.png",
               "friends": [
                   "ramoncin"
               ]
@@ -303,7 +228,7 @@ Deletes token
           {
               "username": "potxolo",
               "is_connected": true,
-              "avatar": "/media/avatars/default.jpg",
+              "avatar": "/media/avatars/default.png",
               "friends": [
                   "ramoncin"
               ]
@@ -350,7 +275,7 @@ Deletes token
           "initiator": {
               "username": "jimenetz",
               "is_connected": true,
-              "avatar": "/media/avatars/default.jpg",
+              "avatar": "/media/avatars/default.png",
               "friends": [
                   "carmentxu",
                   "potxoloTheThird"
@@ -359,7 +284,7 @@ Deletes token
           "receiver": {
               "username": "manoli",
               "is_connected": true,
-              "avatar": "/media/avatars/default.jpg",
+              "avatar": "/media/avatars/default.png",
               "friends": []
           }
       }
@@ -377,7 +302,7 @@ Deletes token
                 "initiator": {
                     "username": "jimenetz",
                     "is_connected": false,
-                    "avatar": "/media/avatars/default.jpg",
+                    "avatar": "/media/avatars/default.png",
                     "friends": [
                         "carmentxu",
                         "potxoloTheThird"
@@ -386,7 +311,7 @@ Deletes token
                 "receiver": {
                     "username": "manoli",
                     "is_connected": true,
-                    "avatar": "/media/avatars/default.jpg",
+                    "avatar": "/media/avatars/default.png",
                     "friends": []
                 },
                 "last_message": null
@@ -405,7 +330,7 @@ Deletes token
             "initiator": {
                 "username": "jimenetz",
                 "is_connected": false,
-                "avatar": "/media/avatars/default.jpg",
+                "avatar": "/media/avatars/default.png",
                 "friends": [
                     "carmentxu",
                     "potxoloTheThird"
@@ -414,80 +339,12 @@ Deletes token
             "receiver": {
                 "username": "manoli",
                 "is_connected": true,
-                "avatar": "/media/avatars/default.jpg",
+                "avatar": "/media/avatars/default.png",
                 "friends": []
             },
             "message_set": []
         }
   ---
-  
-  ### GET localhost:8000/conversations/check_invitation/
-
-    Authorization required YES
-
-      Headers:
-          Authorization: Token 7faff8fe07ef93d56b99a6c7f9e94bfc07d2d3eb
-
-      Return:
-          {
-          "chat_invitation": 4
-      }
-    ---
-### POST localhost:8000/conversations/accept_invitation/
-
-  Authorization required YES
-
-    Headers:
-         Authorization: Token 7faff8fe07ef93d56b99a6c7f9e94bfc07d2d3eb
-
-    Return:
-        {
-			"initiator": {
-				"id": 3,
-				"username": "a",
-				"email": "",
-				"is_connected": true,
-				"is_42": false,
-				"avatar": null,
-				"friends": [
-					"b",
-					"imontero"
-				],
-				"chat_invitation": false
-			},
-			"receiver": {
-				"id": 2,
-				"username": "imontero",
-				"email": "",
-				"is_connected": true,
-				"is_42": false,
-				"avatar": null,
-				"friends": [
-					"a"
-				],
-				"chat_invitation": false
-			},
-			"message_set": []
-		}
-
----
-### POST localhost:8000/conversations/decline_invitation/
-
-  Authorization required YES
-
-    Headers:
-         Authorization: Token 7faff8fe07ef93d56b99a6c7f9e94bfc07d2d3eb
-
-    Return:
-		{
-			"message": "Invitation declined and conversation deleted"
-		}
----
-
-
-
-
-
   ### WEBSOCKET ws://localhost:8000/ws/chat/<int:convo_id>/
 
   Authorization required YES
@@ -497,168 +354,4 @@ Deletes token
 
   Connect to websocket
   Send/receive message
-
-    Message:
-        {"message":"holii"}
----
-  ## Chat
----
-### POST localhost:8000/blockhain/add/
-
-  Authorization required YES
-
-    Headers:
-         Authorization: Token 7faff8fe07ef93d56b99a6c7f9e94bfc07d2d3eb
-
-    Body:
-      {
-          "match_score":"match_id=1 timestamp=3894894898932 player1=pepe player2=manolo winner=pepe"
-      }
-
----
-### GET localhost:8000/blockhain/get/
-
-  Authorization required YES
-
-    Headers:
-         Authorization: Token 7faff8fe07ef93d56b99a6c7f9e94bfc07d2d3eb
-
-    Return:
-        [
-            {
-                "match_id": "1",
-                "timestamp": "894894898932",
-                "player1": "pepe",
-                "player2": "manolo",
-                "winner": "pepe"
-            },
-            {
-                "match_id": "2",
-                "timestamp": "4353454",
-                "player1": "potxolo",
-                "player2": "pako",
-                "winner": "potxolo"
-            }
-        ]
----
-  ## Tournament
----
-  ### GET localhost:8000/tournament/detail/<int:tournament_id>/
-
-  Authorization required YES
-
-    Headers:
-         Authorization: Token 7faff8fe07ef93d56b99a6c7f9e94bfc07d2d3eb
-
-    Return:
-        {
-          "id": 12,
-          "initiator": "imontero",
-          "player1": "imontero",
-          "player2": "pepe",
-          "player3": "ptxolin",
-          "player4": "manolete",
-          "game1_id": 14,
-          "game2_id": 15,
-          "final_game_id": 18,
-          "game1_winner": "imontero",
-          "game2_winner": "manolete",
-          "final_game_winner": "manolete",
-          "start_time": "2024-06-29T11:29:43Z",
-          "end_time": null
-      }
-
----
-
-### GET localhost:8000/tournament/current/
-
-  Authorization required YES
-
-    Headers:
-         Authorization: Token 7faff8fe07ef93d56b99a6c7f9e94bfc07d2d3eb
-
-    Return:
-        [
-          {
-              "id": 13,
-              "player1": "imontero",
-              "player2": "pepe",
-              "player3": "maricarmen",
-              "player4": "manolete",
-              "game1_winner": null,
-              "game2_winner": null,
-              "final_game_winner": null,
-              "start_time": "2024-06-29T15:14:38.186303Z",
-              "end_time": null
-          },
-          {
-              "id": 12,
-              "player1": "imontero",
-              "player2": "pepe",
-              "player3": "ptxolin",
-              "player4": "manolete",
-              "game1_winner": "imontero",
-              "game2_winner": "manolete",
-              "final_game_winner": "manolete",
-              "start_time": "2024-06-29T11:29:43Z",
-              "end_time": null
-          }
-      ]
-
----
-
-### POST localhost:8000/tournament/create/
-
-  Authorization required YES
-
-    Headers:
-         Authorization: Token 7faff8fe07ef93d56b99a6c7f9e94bfc07d2d3eb
-
-    Return:
-        {
-            "id": 16,
-            "initiator": "imontero",
-            "player1": "imontero",
-            "player2": "manolete",
-            "player3": "teresa",
-            "player4": "ptxolin",
-            "game1": 23,
-            "game2": 24,
-            "start_time": "2024-06-29T16:22:53.790"
-        }
-
----
-
-### POST localhost:8000/tournament/create/
-
-  Authorization required YES
-
-    Headers:
-         Authorization: Token 7faff8fe07ef93d56b99a6c7f9e94bfc07d2d3eb
-
-    Body:
-        {
-                "player1_username": "imontero",
-                "player2_username": "manolete",
-                "tournament_id": 16
-        }
-    
-    Return:
-        {
-            "id": 16,
-            "initiator": "imontero",
-            "player1": "imontero",
-            "player2": "manolete",
-            "player3": "teresa",
-            "player4": "ptxolin",
-            "game1": 23,
-            "game2": 24,
-            "final_game": 30,
-            "start_time": "2024-06-29T16:22:53.790Z",
-            "end_time": null
-        }
-
----
-
-
-
+  ---

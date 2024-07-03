@@ -7,6 +7,5 @@ down:
 exec:
 	docker exec -it python-trascendence bash
 
-clean: 
-	docker compose down --volumes
+clean: down
 	yes | docker system prune -a
