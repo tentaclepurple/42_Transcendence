@@ -1,0 +1,1254 @@
+{
+    "data": [
+        {
+            "id": "74",
+            "type": "campus",
+            "attributes": {
+                "name": "Penang",
+                "time-zone": "Asia/Kuala_Lumpur",
+                "language": {
+                    "id": 2,
+                    "name": "English",
+                    "identifier": "en",
+                    "created_at": "2015-04-14T16:07:38.122Z",
+                    "updated_at": "2024-07-03T15:48:05.813Z"
+                },
+                "users-count": 1,
+                "vogsphere-id": null,
+                "country": "Malaysia",
+                "address": "Level 1, No 21-35, UAB Building, Gat Lebuh China, George Town, 10300, Penang Malaysia",
+                "zip": "10300",
+                "city": "Penang",
+                "website": "https://www.42.fr/",
+                "facebook": "",
+                "twitter": "",
+                "active": true,
+                "public": false,
+                "email-extension": "42penang.edu.my",
+                "default-hidden-phone": false
+            },
+            "relationships": {
+                "language": {
+                    "data": {
+                        "id": "2",
+                        "type": "languages"
+                    }
+                },
+                "endpoint": {
+                    "data": null
+                }
+            }
+        },
+        {
+            "id": "73",
+            "type": "campus",
+            "attributes": {
+                "name": "IskandarPuteri",
+                "time-zone": "Asia/Kuala_Lumpur",
+                "language": {
+                    "id": 2,
+                    "name": "English",
+                    "identifier": "en",
+                    "created_at": "2015-04-14T16:07:38.122Z",
+                    "updated_at": "2024-07-03T15:48:05.813Z"
+                },
+                "users-count": 6,
+                "vogsphere-id": 66,
+                "country": "Malaysia",
+                "address": "G-01 & G-02 Hab Citrine,Sunway Citrine, Sunway Iskandar.",
+                "zip": "79250",
+                "city": "IskandarPuteri",
+                "website": "https://www.42.fr/",
+                "facebook": "",
+                "twitter": "",
+                "active": true,
+                "public": false,
+                "email-extension": "42iskandarputeri.edu.my",
+                "default-hidden-phone": false
+            },
+            "relationships": {
+                "language": {
+                    "data": {
+                        "id": "2",
+                        "type": "languages"
+                    }
+                },
+                "endpoint": {
+                    "data": {
+                        "id": "64",
+                        "type": "endpoints"
+                    }
+                }
+            }
+        },
+        {
+            "id": "72",
+            "type": "campus",
+            "attributes": {
+                "name": "Milano",
+                "time-zone": "Europe/Rome",
+                "language": {
+                    "id": 16,
+                    "name": "Italian",
+                    "identifier": "it",
+                    "created_at": "2020-03-12T13:30:39.859Z",
+                    "updated_at": "2024-07-02T06:32:01.160Z"
+                },
+                "users-count": 17,
+                "vogsphere-id": 63,
+                "country": "Italy",
+                "address": "Via Massimo D'Azeglio, 3",
+                "zip": "20154",
+                "city": "Milano MI",
+                "website": "https://www.42milano.com/",
+                "facebook": "",
+                "twitter": "",
+                "active": true,
+                "public": true,
+                "email-extension": "42milano.com",
+                "default-hidden-phone": false
+            },
+            "relationships": {
+                "language": {
+                    "data": {
+                        "id": "16",
+                        "type": "languages"
+                    }
+                },
+                "endpoint": {
+                    "data": {
+                        "id": "60",
+                        "type": "endpoints"
+                    }
+                }
+            }
+        },
+        {
+            "id": "71",
+            "type": "campus",
+            "attributes": {
+                "name": "Beirut",
+                "time-zone": "Asia/Riyadh",
+                "language": {
+                    "id": 2,
+                    "name": "English",
+                    "identifier": "en",
+                    "created_at": "2015-04-14T16:07:38.122Z",
+                    "updated_at": "2024-07-03T15:48:05.813Z"
+                },
+                "users-count": 508,
+                "vogsphere-id": 64,
+                "country": "Lebanon",
+                "address": "Beirut District Digital  Nassif El Yazaji St, Street, Liban",
+                "zip": "00000",
+                "city": "Beirut",
+                "website": "42beirut.com",
+                "facebook": "",
+                "twitter": "",
+                "active": true,
+                "public": true,
+                "email-extension": "42beirut.com",
+                "default-hidden-phone": false
+            },
+            "relationships": {
+                "language": {
+                    "data": {
+                        "id": "2",
+                        "type": "languages"
+                    }
+                },
+                "endpoint": {
+                    "data": {
+                        "id": "61",
+                        "type": "endpoints"
+                    }
+                }
+            }
+        },
+        {
+            "id": "70",
+            "type": "campus",
+            "attributes": {
+                "name": "Nablus",
+                "time-zone": "Europe/Paris",
+                "language": {
+                    "id": 2,
+                    "name": "English",
+                    "identifier": "en",
+                    "created_at": "2015-04-14T16:07:38.122Z",
+                    "updated_at": "2024-07-03T15:48:05.813Z"
+                },
+                "users-count": 2,
+                "vogsphere-id": null,
+                "country": "Palestine, State of",
+                "address": "Al-Ersal Street, Ramallah, Al-Ersal street, Nablus.",
+                "zip": "00000",
+                "city": "Nablus",
+                "website": "42nablus.com",
+                "facebook": "",
+                "twitter": "",
+                "active": true,
+                "public": true,
+                "email-extension": null,
+                "default-hidden-phone": false
+            },
+            "relationships": {
+                "language": {
+                    "data": {
+                        "id": "2",
+                        "type": "languages"
+                    }
+                },
+                "endpoint": {
+                    "data": null
+                }
+            }
+        },
+        {
+            "id": "69",
+            "type": "campus",
+            "attributes": {
+                "name": "Gyeongsan",
+                "time-zone": "Asia/Seoul",
+                "language": {
+                    "id": 14,
+                    "name": "Korean",
+                    "identifier": "ko",
+                    "created_at": "2020-01-08T10:56:47.481Z",
+                    "updated_at": "2024-06-21T17:35:47.127Z"
+                },
+                "users-count": 745,
+                "vogsphere-id": 62,
+                "country": "Korea, Republic of",
+                "address": "University Daegu, Naeri-ri, Jillyang-eup, Gyeongsan-si, Gyeongsangbuk-do, South Korea",
+                "zip": "0",
+                "city": "Gyeongsan",
+                "website": "https://42gyeongsan.kr",
+                "facebook": "",
+                "twitter": "",
+                "active": true,
+                "public": true,
+                "email-extension": "42gyeongsan.kr",
+                "default-hidden-phone": false
+            },
+            "relationships": {
+                "language": {
+                    "data": {
+                        "id": "14",
+                        "type": "languages"
+                    }
+                },
+                "endpoint": {
+                    "data": {
+                        "id": "59",
+                        "type": "endpoints"
+                    }
+                }
+            }
+        },
+        {
+            "id": "68",
+            "type": "campus",
+            "attributes": {
+                "name": "Luanda",
+                "time-zone": "Europe/Paris",
+                "language": {
+                    "id": 2,
+                    "name": "English",
+                    "identifier": "en",
+                    "created_at": "2015-04-14T16:07:38.122Z",
+                    "updated_at": "2024-07-03T15:48:05.813Z"
+                },
+                "users-count": 580,
+                "vogsphere-id": 57,
+                "country": "Angola",
+                "address": "Av. Luanda Sul, Luanda, Angola",
+                "zip": "0",
+                "city": "Luanda",
+                "website": "https://www.42.fr/",
+                "facebook": "",
+                "twitter": "",
+                "active": true,
+                "public": true,
+                "email-extension": "42luanda.com",
+                "default-hidden-phone": true
+            },
+            "relationships": {
+                "language": {
+                    "data": {
+                        "id": "2",
+                        "type": "languages"
+                    }
+                },
+                "endpoint": {
+                    "data": {
+                        "id": "54",
+                        "type": "endpoints"
+                    }
+                }
+            }
+        },
+        {
+            "id": "67",
+            "type": "campus",
+            "attributes": {
+                "name": "Warsaw",
+                "time-zone": "Europe/Warsaw",
+                "language": {
+                    "id": 2,
+                    "name": "English",
+                    "identifier": "en",
+                    "created_at": "2015-04-14T16:07:38.122Z",
+                    "updated_at": "2024-07-03T15:48:05.813Z"
+                },
+                "users-count": 423,
+                "vogsphere-id": 60,
+                "country": "Poland",
+                "address": "Spark - Aleja Solidarności 171, Warszawa",
+                "zip": "0",
+                "city": "Warsaw",
+                "website": "https://www.42.fr/",
+                "facebook": "",
+                "twitter": "",
+                "active": true,
+                "public": true,
+                "email-extension": "42warsaw.pl",
+                "default-hidden-phone": false
+            },
+            "relationships": {
+                "language": {
+                    "data": {
+                        "id": "2",
+                        "type": "languages"
+                    }
+                },
+                "endpoint": {
+                    "data": {
+                        "id": "57",
+                        "type": "endpoints"
+                    }
+                }
+            }
+        },
+        {
+            "id": "66",
+            "type": "campus",
+            "attributes": {
+                "name": "Forty2",
+                "time-zone": "Europe/Paris",
+                "language": {
+                    "id": 1,
+                    "name": "Français",
+                    "identifier": "fr",
+                    "created_at": "2014-11-02T16:43:38.466Z",
+                    "updated_at": "2024-07-03T15:44:10.365Z"
+                },
+                "users-count": 225,
+                "vogsphere-id": 59,
+                "country": "France",
+                "address": "Fort des saumonards",
+                "zip": "17190",
+                "city": "Saint-George-d'Oléron",
+                "website": "www.forty2.fr",
+                "facebook": "",
+                "twitter": "",
+                "active": true,
+                "public": false,
+                "email-extension": "forty2.fr",
+                "default-hidden-phone": false
+            },
+            "relationships": {
+                "language": {
+                    "data": {
+                        "id": "1",
+                        "type": "languages"
+                    }
+                },
+                "endpoint": {
+                    "data": {
+                        "id": "56",
+                        "type": "endpoints"
+                    }
+                }
+            }
+        },
+        {
+            "id": "65",
+            "type": "campus",
+            "attributes": {
+                "name": "Antananarivo",
+                "time-zone": "Africa/Nairobi",
+                "language": {
+                    "id": 1,
+                    "name": "Français",
+                    "identifier": "fr",
+                    "created_at": "2014-11-02T16:43:38.466Z",
+                    "updated_at": "2024-07-03T15:44:10.365Z"
+                },
+                "users-count": 626,
+                "vogsphere-id": 61,
+                "country": "Madagascar",
+                "address": "Building Titan VI Zone Galaxy Andraharo",
+                "zip": "101",
+                "city": "Antananarivo",
+                "website": "https://www.42antananarivo.mg",
+                "facebook": "",
+                "twitter": "",
+                "active": true,
+                "public": true,
+                "email-extension": "42antananarivo.mg",
+                "default-hidden-phone": false
+            },
+            "relationships": {
+                "language": {
+                    "data": {
+                        "id": "1",
+                        "type": "languages"
+                    }
+                },
+                "endpoint": {
+                    "data": {
+                        "id": "58",
+                        "type": "endpoints"
+                    }
+                }
+            }
+        },
+        {
+            "id": "64",
+            "type": "campus",
+            "attributes": {
+                "name": "Singapore",
+                "time-zone": "Asia/Singapore",
+                "language": {
+                    "id": 2,
+                    "name": "English",
+                    "identifier": "en",
+                    "created_at": "2015-04-14T16:07:38.122Z",
+                    "updated_at": "2024-07-03T15:48:05.813Z"
+                },
+                "users-count": 621,
+                "vogsphere-id": 56,
+                "country": "Singapore",
+                "address": "8 Somapah Rd",
+                "zip": "487372",
+                "city": "Singapore",
+                "website": "https://www.42.fr/",
+                "facebook": "",
+                "twitter": "",
+                "active": true,
+                "public": true,
+                "email-extension": "42singapore.sg",
+                "default-hidden-phone": false
+            },
+            "relationships": {
+                "language": {
+                    "data": {
+                        "id": "2",
+                        "type": "languages"
+                    }
+                },
+                "endpoint": {
+                    "data": {
+                        "id": "53",
+                        "type": "endpoints"
+                    }
+                }
+            }
+        },
+        {
+            "id": "63",
+            "type": "campus",
+            "attributes": {
+                "name": "Antwerp",
+                "time-zone": "Europe/Brussels",
+                "language": {
+                    "id": 1,
+                    "name": "Français",
+                    "identifier": "fr",
+                    "created_at": "2014-11-02T16:43:38.466Z",
+                    "updated_at": "2024-07-03T15:44:10.365Z"
+                },
+                "users-count": 1,
+                "vogsphere-id": null,
+                "country": "Belgium",
+                "address": "Mediaplein 1",
+                "zip": "2018",
+                "city": "Antwerp",
+                "website": "https://www.s19.be",
+                "facebook": "",
+                "twitter": "",
+                "active": false,
+                "public": false,
+                "email-extension": "s19.be",
+                "default-hidden-phone": false
+            },
+            "relationships": {
+                "language": {
+                    "data": {
+                        "id": "1",
+                        "type": "languages"
+                    }
+                },
+                "endpoint": {
+                    "data": null
+                }
+            }
+        },
+        {
+            "id": "62",
+            "type": "campus",
+            "attributes": {
+                "name": "Le Havre",
+                "time-zone": "Europe/Paris",
+                "language": {
+                    "id": 1,
+                    "name": "Français",
+                    "identifier": "fr",
+                    "created_at": "2014-11-02T16:43:38.466Z",
+                    "updated_at": "2024-07-03T15:44:10.365Z"
+                },
+                "users-count": 581,
+                "vogsphere-id": 54,
+                "country": "France",
+                "address": "Cité Numérique - 20 Quai Frissard - Le Havre - 76600 - France",
+                "zip": "76600",
+                "city": "Le Havre",
+                "website": "https://42lehavre.fr",
+                "facebook": "",
+                "twitter": "",
+                "active": true,
+                "public": true,
+                "email-extension": "42lehavre.fr",
+                "default-hidden-phone": false
+            },
+            "relationships": {
+                "language": {
+                    "data": {
+                        "id": "1",
+                        "type": "languages"
+                    }
+                },
+                "endpoint": {
+                    "data": {
+                        "id": "51",
+                        "type": "endpoints"
+                    }
+                }
+            }
+        },
+        {
+            "id": "61",
+            "type": "campus",
+            "attributes": {
+                "name": "Belo Horizonte",
+                "time-zone": "America/Sao_Paulo",
+                "language": {
+                    "id": 17,
+                    "name": "Brazilian Portuguese",
+                    "identifier": "pt_br",
+                    "created_at": "2020-12-10T14:15:00.994Z",
+                    "updated_at": "2024-07-02T06:32:16.423Z"
+                },
+                "users-count": 12,
+                "vogsphere-id": null,
+                "country": "Brazil",
+                "address": "- No address yet -",
+                "zip": "30000",
+                "city": "Belo Horizonte",
+                "website": "https://42bh.org.br",
+                "facebook": "",
+                "twitter": "",
+                "active": true,
+                "public": true,
+                "email-extension": "42bh.org.br",
+                "default-hidden-phone": false
+            },
+            "relationships": {
+                "language": {
+                    "data": {
+                        "id": "17",
+                        "type": "languages"
+                    }
+                },
+                "endpoint": {
+                    "data": null
+                }
+            }
+        },
+        {
+            "id": "60",
+            "type": "campus",
+            "attributes": {
+                "name": "Perpignan",
+                "time-zone": "Europe/Paris",
+                "language": {
+                    "id": 1,
+                    "name": "Français",
+                    "identifier": "fr",
+                    "created_at": "2014-11-02T16:43:38.466Z",
+                    "updated_at": "2024-07-03T15:44:10.365Z"
+                },
+                "users-count": 724,
+                "vogsphere-id": 53,
+                "country": "France",
+                "address": "5, Rue Pierre Curie - Les Dames de France",
+                "zip": "66000",
+                "city": "Perpignan",
+                "website": "https://42perpignan.fr",
+                "facebook": "",
+                "twitter": "",
+                "active": true,
+                "public": true,
+                "email-extension": "42perpignan.fr",
+                "default-hidden-phone": false
+            },
+            "relationships": {
+                "language": {
+                    "data": {
+                        "id": "1",
+                        "type": "languages"
+                    }
+                },
+                "endpoint": {
+                    "data": {
+                        "id": "50",
+                        "type": "endpoints"
+                    }
+                }
+            }
+        },
+        {
+            "id": "59",
+            "type": "campus",
+            "attributes": {
+                "name": "Luxembourg",
+                "time-zone": "Europe/Paris",
+                "language": {
+                    "id": 2,
+                    "name": "English",
+                    "identifier": "en",
+                    "created_at": "2015-04-14T16:07:38.122Z",
+                    "updated_at": "2024-07-03T15:48:05.813Z"
+                },
+                "users-count": 281,
+                "vogsphere-id": 58,
+                "country": "Luxembourg",
+                "address": "14, porte de France",
+                "zip": "4360",
+                "city": "Esch-sur-Alzette",
+                "website": "https://42luxembourg.lu",
+                "facebook": "",
+                "twitter": "",
+                "active": true,
+                "public": true,
+                "email-extension": "42luxembourg.lu",
+                "default-hidden-phone": false
+            },
+            "relationships": {
+                "language": {
+                    "data": {
+                        "id": "2",
+                        "type": "languages"
+                    }
+                },
+                "endpoint": {
+                    "data": {
+                        "id": "55",
+                        "type": "endpoints"
+                    }
+                }
+            }
+        },
+        {
+            "id": "58",
+            "type": "campus",
+            "attributes": {
+                "name": "Porto",
+                "time-zone": "Europe/Lisbon",
+                "language": {
+                    "id": 9,
+                    "name": "Portuguese",
+                    "identifier": "pt",
+                    "created_at": "2019-01-29T15:17:48.227Z",
+                    "updated_at": "2024-07-02T06:31:58.130Z"
+                },
+                "users-count": 1392,
+                "vogsphere-id": 50,
+                "country": "Portugal",
+                "address": "Av. dos Aliados n⁰ 322/324, 3⁰ Piso",
+                "zip": "4000-407",
+                "city": "Porto",
+                "website": "https://42porto.com",
+                "facebook": "https://www.facebook.com/42porto",
+                "twitter": "",
+                "active": true,
+                "public": true,
+                "email-extension": "42porto.com",
+                "default-hidden-phone": false
+            },
+            "relationships": {
+                "language": {
+                    "data": {
+                        "id": "9",
+                        "type": "languages"
+                    }
+                },
+                "endpoint": {
+                    "data": {
+                        "id": "46",
+                        "type": "endpoints"
+                    }
+                }
+            }
+        },
+        {
+            "id": "57",
+            "type": "campus",
+            "attributes": {
+                "name": "London",
+                "time-zone": "Europe/London",
+                "language": {
+                    "id": 2,
+                    "name": "English",
+                    "identifier": "en",
+                    "created_at": "2015-04-14T16:07:38.122Z",
+                    "updated_at": "2024-07-03T15:48:05.813Z"
+                },
+                "users-count": 572,
+                "vogsphere-id": 51,
+                "country": "United Kingdom",
+                "address": "30 Millbank - 5th & 6th Floors",
+                "zip": "SW1P 4DU",
+                "city": "London",
+                "website": "https://42london.com",
+                "facebook": "",
+                "twitter": "",
+                "active": true,
+                "public": true,
+                "email-extension": "42london.com",
+                "default-hidden-phone": true
+            },
+            "relationships": {
+                "language": {
+                    "data": {
+                        "id": "2",
+                        "type": "languages"
+                    }
+                },
+                "endpoint": {
+                    "data": {
+                        "id": "47",
+                        "type": "endpoints"
+                    }
+                }
+            }
+        },
+        {
+            "id": "56",
+            "type": "campus",
+            "attributes": {
+                "name": "Prague",
+                "time-zone": "Europe/Prague",
+                "language": {
+                    "id": 2,
+                    "name": "English",
+                    "identifier": "en",
+                    "created_at": "2015-04-14T16:07:38.122Z",
+                    "updated_at": "2024-07-03T15:48:05.813Z"
+                },
+                "users-count": 1070,
+                "vogsphere-id": 52,
+                "country": "Czech Republic",
+                "address": "AFI CITY TOWER Kolbenova 1021/9 Praha 9 - Vysočany",
+                "zip": "19000",
+                "city": "Prague",
+                "website": "https://42prague.com",
+                "facebook": "https://www.facebook.com/42Prague",
+                "twitter": "",
+                "active": true,
+                "public": true,
+                "email-extension": "42prague.com",
+                "default-hidden-phone": false
+            },
+            "relationships": {
+                "language": {
+                    "data": {
+                        "id": "2",
+                        "type": "languages"
+                    }
+                },
+                "endpoint": {
+                    "data": {
+                        "id": "48",
+                        "type": "endpoints"
+                    }
+                }
+            }
+        },
+        {
+            "id": "55",
+            "type": "campus",
+            "attributes": {
+                "name": "Tétouan",
+                "time-zone": "Africa/Casablanca",
+                "language": {
+                    "id": 1,
+                    "name": "Français",
+                    "identifier": "fr",
+                    "created_at": "2014-11-02T16:43:38.466Z",
+                    "updated_at": "2024-07-03T15:44:10.365Z"
+                },
+                "users-count": 711,
+                "vogsphere-id": 44,
+                "country": "Morocco",
+                "address": "Parc Tétouan Shore, CP93150 , Martil, Tétouan",
+                "zip": "93000",
+                "city": "Tétouan",
+                "website": "https://1337.ma",
+                "facebook": "",
+                "twitter": "https://twitter.com/1337FIL",
+                "active": true,
+                "public": true,
+                "email-extension": "1337.ma",
+                "default-hidden-phone": false
+            },
+            "relationships": {
+                "language": {
+                    "data": {
+                        "id": "1",
+                        "type": "languages"
+                    }
+                },
+                "endpoint": {
+                    "data": {
+                        "id": "39",
+                        "type": "endpoints"
+                    }
+                }
+            }
+        },
+        {
+            "id": "54",
+            "type": "campus",
+            "attributes": {
+                "name": "42 Central",
+                "time-zone": "Europe/Paris",
+                "language": {
+                    "id": 1,
+                    "name": "Français",
+                    "identifier": "fr",
+                    "created_at": "2014-11-02T16:43:38.466Z",
+                    "updated_at": "2024-07-03T15:44:10.365Z"
+                },
+                "users-count": 119,
+                "vogsphere-id": 55,
+                "country": "France",
+                "address": "96 Bd Bessières",
+                "zip": "75017",
+                "city": "Paris",
+                "website": "http://42campus.org",
+                "facebook": "",
+                "twitter": "",
+                "active": true,
+                "public": false,
+                "email-extension": "42campus.org",
+                "default-hidden-phone": false
+            },
+            "relationships": {
+                "language": {
+                    "data": {
+                        "id": "1",
+                        "type": "languages"
+                    }
+                },
+                "endpoint": {
+                    "data": {
+                        "id": "52",
+                        "type": "endpoints"
+                    }
+                }
+            }
+        },
+        {
+            "id": "53",
+            "type": "campus",
+            "attributes": {
+                "name": "Vienna",
+                "time-zone": "Europe/Vienna",
+                "language": {
+                    "id": 2,
+                    "name": "English",
+                    "identifier": "en",
+                    "created_at": "2015-04-14T16:07:38.122Z",
+                    "updated_at": "2024-07-03T15:48:05.813Z"
+                },
+                "users-count": 1142,
+                "vogsphere-id": 49,
+                "country": "Austria",
+                "address": "Muthgasse 26/1",
+                "zip": "1190",
+                "city": "Vienna",
+                "website": "https://www.42vienna.com",
+                "facebook": "https://www.facebook.com/42vienna",
+                "twitter": "",
+                "active": true,
+                "public": true,
+                "email-extension": "42vienna.com",
+                "default-hidden-phone": false
+            },
+            "relationships": {
+                "language": {
+                    "data": {
+                        "id": "2",
+                        "type": "languages"
+                    }
+                },
+                "endpoint": {
+                    "data": {
+                        "id": "45",
+                        "type": "endpoints"
+                    }
+                }
+            }
+        },
+        {
+            "id": "52",
+            "type": "campus",
+            "attributes": {
+                "name": "Florence",
+                "time-zone": "Europe/Rome",
+                "language": {
+                    "id": 16,
+                    "name": "Italian",
+                    "identifier": "it",
+                    "created_at": "2020-03-12T13:30:39.859Z",
+                    "updated_at": "2024-07-02T06:32:01.160Z"
+                },
+                "users-count": 1101,
+                "vogsphere-id": 46,
+                "country": "Italy",
+                "address": "Via del Tiratoio, 1",
+                "zip": "50124",
+                "city": "Firenze",
+                "website": "https://www.42firenze.it",
+                "facebook": "",
+                "twitter": "",
+                "active": true,
+                "public": true,
+                "email-extension": "42firenze.it",
+                "default-hidden-phone": true
+            },
+            "relationships": {
+                "language": {
+                    "data": {
+                        "id": "16",
+                        "type": "languages"
+                    }
+                },
+                "endpoint": {
+                    "data": {
+                        "id": "43",
+                        "type": "endpoints"
+                    }
+                }
+            }
+        },
+        {
+            "id": "51",
+            "type": "campus",
+            "attributes": {
+                "name": "Berlin",
+                "time-zone": "Europe/Berlin",
+                "language": {
+                    "id": 2,
+                    "name": "English",
+                    "identifier": "en",
+                    "created_at": "2015-04-14T16:07:38.122Z",
+                    "updated_at": "2024-07-03T15:48:05.813Z"
+                },
+                "users-count": 1646,
+                "vogsphere-id": 48,
+                "country": "Germany",
+                "address": "Harzer Strasse 39",
+                "zip": "12059",
+                "city": "Berlin",
+                "website": "http://42berlin.de/",
+                "facebook": "",
+                "twitter": "",
+                "active": true,
+                "public": true,
+                "email-extension": "42berlin.de",
+                "default-hidden-phone": false
+            },
+            "relationships": {
+                "language": {
+                    "data": {
+                        "id": "2",
+                        "type": "languages"
+                    }
+                },
+                "endpoint": {
+                    "data": {
+                        "id": "44",
+                        "type": "endpoints"
+                    }
+                }
+            }
+        },
+        {
+            "id": "50",
+            "type": "campus",
+            "attributes": {
+                "name": "Kocaeli",
+                "time-zone": "Europe/Istanbul",
+                "language": {
+                    "id": 18,
+                    "name": "Turkish",
+                    "identifier": "tr",
+                    "created_at": "2021-08-20T10:50:01.782Z",
+                    "updated_at": "2024-07-03T15:36:49.491Z"
+                },
+                "users-count": 2584,
+                "vogsphere-id": 37,
+                "country": "Turkey",
+                "address": "Muallimköy Mahallesi, Deniz Cd. No:143-5, 41400 Gebze/Kocaeli",
+                "zip": "41000",
+                "city": "Kocaeli",
+                "website": "http://42kocaeli.com.tr",
+                "facebook": "",
+                "twitter": "",
+                "active": true,
+                "public": true,
+                "email-extension": "42kocaeli.com.tr",
+                "default-hidden-phone": false
+            },
+            "relationships": {
+                "language": {
+                    "data": {
+                        "id": "18",
+                        "type": "languages"
+                    }
+                },
+                "endpoint": {
+                    "data": {
+                        "id": "35",
+                        "type": "endpoints"
+                    }
+                }
+            }
+        },
+        {
+            "id": "49",
+            "type": "campus",
+            "attributes": {
+                "name": "Istanbul",
+                "time-zone": "Europe/Istanbul",
+                "language": {
+                    "id": 18,
+                    "name": "Turkish",
+                    "identifier": "tr",
+                    "created_at": "2021-08-20T10:50:01.782Z",
+                    "updated_at": "2024-07-03T15:36:49.491Z"
+                },
+                "users-count": 4325,
+                "vogsphere-id": 36,
+                "country": "Turkey",
+                "address": "Ayazağa Mah. Azerbaycan Cad. Vadistanbul İş Blokları 2B Blok Kat 3 Sarıyer",
+                "zip": "34000",
+                "city": "Istanbul",
+                "website": "http://www.42istanbul.com.tr",
+                "facebook": "",
+                "twitter": "",
+                "active": true,
+                "public": true,
+                "email-extension": "42istanbul.com.tr",
+                "default-hidden-phone": false
+            },
+            "relationships": {
+                "language": {
+                    "data": {
+                        "id": "18",
+                        "type": "languages"
+                    }
+                },
+                "endpoint": {
+                    "data": {
+                        "id": "34",
+                        "type": "endpoints"
+                    }
+                }
+            }
+        },
+        {
+            "id": "48",
+            "type": "campus",
+            "attributes": {
+                "name": "Mulhouse",
+                "time-zone": "Europe/Paris",
+                "language": {
+                    "id": 1,
+                    "name": "Français",
+                    "identifier": "fr",
+                    "created_at": "2014-11-02T16:43:38.466Z",
+                    "updated_at": "2024-07-03T15:44:10.365Z"
+                },
+                "users-count": 652,
+                "vogsphere-id": 39,
+                "country": "France",
+                "address": "30 Rue François Spoerry",
+                "zip": "68100",
+                "city": "Mulhouse",
+                "website": "https://42mulhouse.fr",
+                "facebook": "https://www.facebook.com/42Mulhouse",
+                "twitter": "https://twitter.com/42MulhouseGE",
+                "active": true,
+                "public": true,
+                "email-extension": "42mulhouse.fr",
+                "default-hidden-phone": false
+            },
+            "relationships": {
+                "language": {
+                    "data": {
+                        "id": "1",
+                        "type": "languages"
+                    }
+                },
+                "endpoint": {
+                    "data": {
+                        "id": "37",
+                        "type": "endpoints"
+                    }
+                }
+            }
+        },
+        {
+            "id": "47",
+            "type": "campus",
+            "attributes": {
+                "name": "Lausanne",
+                "time-zone": "Europe/Zurich",
+                "language": {
+                    "id": 1,
+                    "name": "Français",
+                    "identifier": "fr",
+                    "created_at": "2014-11-02T16:43:38.466Z",
+                    "updated_at": "2024-07-03T15:44:10.365Z"
+                },
+                "users-count": 1503,
+                "vogsphere-id": 35,
+                "country": "Switzerland",
+                "address": "64 Rue de Lausanne",
+                "zip": "1020",
+                "city": "Renens",
+                "website": "https://42lausanne.ch/",
+                "facebook": "https://www.facebook.com/42Lausanne",
+                "twitter": "https://twitter.com/42lausanne",
+                "active": true,
+                "public": true,
+                "email-extension": "42lausanne.ch",
+                "default-hidden-phone": true
+            },
+            "relationships": {
+                "language": {
+                    "data": {
+                        "id": "1",
+                        "type": "languages"
+                    }
+                },
+                "endpoint": {
+                    "data": {
+                        "id": "32",
+                        "type": "endpoints"
+                    }
+                }
+            }
+        },
+        {
+            "id": "46",
+            "type": "campus",
+            "attributes": {
+                "name": "Barcelona",
+                "time-zone": "Europe/Madrid",
+                "language": {
+                    "id": 11,
+                    "name": "Spanish",
+                    "identifier": "es",
+                    "created_at": "2019-08-09T15:14:32.544Z",
+                    "updated_at": "2024-07-03T15:48:07.657Z"
+                },
+                "users-count": 3650,
+                "vogsphere-id": 38,
+                "country": "Spain",
+                "address": "Parc Tecnològic de Barcelona Activa, Carrer Albert Einstein,11",
+                "zip": "08042",
+                "city": "Barcelona",
+                "website": "https://www.42barcelona.com",
+                "facebook": "",
+                "twitter": "",
+                "active": true,
+                "public": true,
+                "email-extension": "42barcelona.com",
+                "default-hidden-phone": true
+            },
+            "relationships": {
+                "language": {
+                    "data": {
+                        "id": "11",
+                        "type": "languages"
+                    }
+                },
+                "endpoint": {
+                    "data": {
+                        "id": "36",
+                        "type": "endpoints"
+                    }
+                }
+            }
+        },
+        {
+            "id": "45",
+            "type": "campus",
+            "attributes": {
+                "name": "Alicante",
+                "time-zone": "Europe/Madrid",
+                "language": {
+                    "id": 11,
+                    "name": "Spanish",
+                    "identifier": "es",
+                    "created_at": "2019-08-09T15:14:32.544Z",
+                    "updated_at": "2024-07-03T15:48:07.657Z"
+                },
+                "users-count": 13,
+                "vogsphere-id": null,
+                "country": "Spain",
+                "address": "- No address yet -",
+                "zip": "03000",
+                "city": "Alicante",
+                "website": "https://42alicante.com/",
+                "facebook": "",
+                "twitter": "",
+                "active": false,
+                "public": false,
+                "email-extension": "42alicante.com",
+                "default-hidden-phone": false
+            },
+            "relationships": {
+                "language": {
+                    "data": {
+                        "id": "11",
+                        "type": "languages"
+                    }
+                },
+                "endpoint": {
+                    "data": null
+                }
+            }
+        }
+    ],
+    "links": {
+        "self": "https://api.intra.42.fr/v2/campus?page%5Bnumber%5D=1&page%5Bsize%5D=30",
+        "next": "https://api.intra.42.fr/v2/campus?page%5Bnumber%5D=2&page%5Bsize%5D=30",
+        "last": "https://api.intra.42.fr/v2/campus?page%5Bnumber%5D=3&page%5Bsize%5D=30"
+    }
+}

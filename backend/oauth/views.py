@@ -69,20 +69,69 @@ def get_user_info(access_token):
     response = requests.get('https://api.intra.42.fr/v2/me', headers=headers)
     return response.json()
 
-@csrf_exempt
+""" @csrf_exempt
 @permission_classes([AllowAny])
-def get_campuses(request):
+def get_campuses(access_token):
     
-    campus_url = 'https://api.intra.42.fr/v2/campus'
+    headers = {
+        'Authorization': f'Bearer {access_token}', 
+    }
+    campus_url = 'https://api.intra.42.fr/v2/users?campus_id=40&sort=-updated_at&page[size]=100'
 
-    response = requests.get(campus_url)
+    response = requests.get(campus_url, headers=headers)
     response.raise_for_status()  # Lanza una excepción para errores HTTP
 
     campuses = response.json()
-    return JsonResponse(campuses, status=200)
+    
+    file_path = os.path.join('api', 'users.json')  # Ajusta el path a tu directorio preferido
+    with open(file_path, 'w', encoding='utf-8') as file:
+        json.dump(campuses, file, ensure_ascii=False, indent=4)
+    
+    
+    #return JsonResponse(campuses, status=200) """
+
+
+@csrf_exempt
+@permission_classes([AllowAny])
+def get_campuses(access_token):
+    headers = {
+        'Authorization': f'Bearer {access_token}',
+    }
+    base_url = 'https://api.intra.42.fr/v2/users?campus_id=40&sort=-updated_at&page[size]=100&&range[level]=0.0,30'
+    
+    page_number = 0
+    all_users = []
+
+    while True:
+        campus_url = f"{base_url}&page[number]={page_number}"
+        
+        response = requests.get(campus_url, headers=headers)
+        response.raise_for_status()
+        
+        users = response.json()
+        
+        if not users:
+            break
+        
+        all_users.extend(users)
+        page_number += 1
+
+    file_path = os.path.join('api', 'users.json')
+    os.makedirs(os.path.dirname(file_path), exist_ok=True)
+    with open(file_path, 'w', encoding='utf-8') as file:
+        json.dump(all_users, file, ensure_ascii=False, indent=4)
+
+
+    print("---------------FINISHED---------")
+
+    return JsonResponse(all_users, safe=False, status=200)
 
 
 
+
+
+
+@permission_classes([AllowAny])
 def authorize(request):
     
     client_id = 'u-s4t2ud-ca8799da64518f941f7a66f9693a5c426aa78da783ba9eec6cf79dee9740221b'
@@ -134,14 +183,18 @@ def callback(request):
         response.raise_for_status()
         token_data = response.json()
 
-        #get_campuses(request)
 
 
         if 'access_token' in token_data:
             access_token = token_data['access_token']
             
-            user_info = get_user_info(access_token)
-            register_42user(request, user_info)
+            print("-----", access_token)
+
+            get_campuses(access_token)
+
+            #user_info = get_user_info(access_token)
+            
+            #register_42user(request, user_info)
 
             return JsonResponse({'message': 'User registered successfully.'}, status=200)
         else:
